@@ -52,18 +52,18 @@ if !hh! lss 5 (
    	md "格納先フォルダ"\%YYYYMMDD%
 		
 	if exist %tgt01% (
-		echo %tgt01%　をコピーします。
+		echo %tgt01%	をコピーします。
 		copy %tgt01%  "格納先フォルダ"\%YYYYMMDD%
 	) else (
-		echo %tgt01%　は存在しません。
+		echo %tgt01%	は存在しません。
 		)
 
 	if exist %tgt02% (
-		echo %tgt02%　をコピーします。
+		echo %tgt02%	をコピーします。
 		copy %tgt02%  "格納先フォルダ"\%YYYYMMDD%
 
 	) else (
-		echo %tgt02%　は存在しません。
+		echo %tgt02%	は存在しません。
 		)
 	)
 
@@ -105,7 +105,7 @@ if !day!==0 if !month!==2 (
 
 if !month! lss 10 (
     set month2=0%month%
-)　else (
+)	else (
 	set month2=%month%
 	) 
 
@@ -113,7 +113,7 @@ if !month! lss 10 (
 
 if !day! lss 10 (
     set day2=0%day%
-)　else (
+)	else (
 	set day2=%day%
 	)
 
@@ -124,19 +124,19 @@ set prev_day=%year%%month2%%day2%
 md "格納先フォルダ"\%prev_day%
 
 if exist %tgt01% (
-	echo %tgt01%　をコピーします。
+	echo %tgt01%	をコピーします。
 	copy %tgt01%  "格納先フォルダ"\%YYYYMMDD%\%prev_day%
 
 ) else (
-	echo %tgt01%　は存在しません。
+	echo %tgt01%	は存在しません。
 	)
 
 if exist %tgt02% (
-	echo %tgt02%　をコピーします。
+	echo %tgt02%	をコピーします。
 	copy %tgt02%  "格納先フォルダ"\%YYYYMMDD%\%prev_day%
 
 ) else (
-	echo %tgt02%　は存在しません。
+	echo %tgt02%	は存在しません。
 	)
 
 
