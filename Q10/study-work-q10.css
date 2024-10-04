@@ -1,0 +1,7 @@
+p.write-active {
+  color: red;
+}
+
+p.blue.write-active {
+  color: blue;
+}
